@@ -33,6 +33,9 @@ public class Transaction {
     @Field(name = "description")
     private String description;
 
+    @Field(name = "purse")
+    private Purse purse;
+
     @Field(name = "transactionDate")
     @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm:ss")
     private LocalDateTime transactionDate = LocalDateTime.now();

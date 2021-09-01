@@ -29,6 +29,8 @@ import java.util.stream.Collectors;
 @Slf4j(topic = "TRANSACTION_HANDLER")
 public class TransactionHandler {
     public static final Double COMMISSION_PER_TRANSACTION = 2.5;
+    private static final Double COMMISSION_BUY_BOOTCOIN = 3.5;
+    private static final Double COMMISION_SELL_BOOTCOINT = 3.6;
     private final ITransactionService transactionService;
     private final BillService billService;
     private final AcquisitionService acquisitionService;
